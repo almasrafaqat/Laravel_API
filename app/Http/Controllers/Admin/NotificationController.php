@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Notification;
+
+class NotificationController extends Controller
+{
+    public function NotificaitonHistory(){
+
+        $result = Notification::all();
+
+        return $result;
+
+    } //end
+}
